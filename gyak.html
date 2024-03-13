@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Változok és Adattípusok</title>
+  </head>
+  <body>
+    <header>
+      <h1>Változók és Adattípusok</h1>
+      <p>
+        A PHP-ben használhatunk változókat és adattípusokat is. A változókban
+        értékeket tárolhatunk. A változó neve előtt mindig $ jel található. A
+        PHP félig típusos nyelv, ami annyit jelent, hogy a változó
+        létrehozásakor (deklaráció) nem kell meghatároznunk az adattípust, amit
+        majd tárolunk benne.
+      </p>
+      <h1>Változó neve</h1>
+      <p>
+        A PHP-ben használhatunk változókat és adattípusokat is. A változókban
+        értékeket tárolhatunk. A változó neve előtt mindig $ jel található. A
+        PHP félig típusos nyelv, ami annyit jelent, hogy a változó
+        létrehozásakor (deklaráció) nem kell meghatároznunk az adattípust, amit
+        majd tárolunk benne.
+      </p>
+      <p>
+        Amikor először értéket adunk egy változónak, akkor jön létre, ekkor
+        foglal le memóriát.
+      </p>
+      <p>
+        Ha egy változó értékét azelőtt vizsgáljuk meg, mielőtt értéket adunk
+        neki, az értéke NULL lesz (SEMMI) és a PHP egy NOTICE (megjegyzés)
+        üzenetet küld nekünk.
+      </p>
+      <h1>?php $a = 5; $todo = ”szöveg”; ?</h1>
+
+      <h1>A változó típusának megadása</h1>
+      <p>
+        Egy változó típusát a legegyszerűbben úgy lehet meghatározni, hogy
+        értéket adunk a változónak.
+      </p>
+      <p>
+        Típuskonverziót alkalmazunk. Az alkalmazható típusok ugyanazok, mint a
+        fenti példában, hozzávéve, hogy az ”integer” lehet ”int” is, a ”double”
+        lehet ”float” és ”real” is.
+      </p>
+      <h1>?php $a = (int) $b; $c = (string) $d; ?</h1>
+
+      <p>A változók értékadásakor használhatunk ilyen trükköt:</p>
+      <h1>?php $a = $b = 5; ?</h1>
+      <p>
+        A fenti kifejezést úgy kell értelmezni, mintha az alábbiakat írtuk volna
+        le:
+      </p>
+      <h1>php $b = 5; $a = $b;</h1>
+      <img src="kutya.jpg" alt="xx" />
+
+      <h1>Adattípus</h1>
+      <p>
+        A számítástechnikában és a számítógépes programozásban az adattípus
+        (vagy egyszerűen típus) adatértékek gyűjteménye vagy csoportosítása,
+        amelyet általában a lehetséges értékek halmaza, az ezeken az értékeken
+        végzett megengedett műveletek halmaza és/vagy ezen értékek megjelenítése
+        határoz meg.
+      </p>
+
+      <h1>Alapok</h1>
+
+      <li>
+        Biztonság – A típusok használata biztosítja a fordítóprogramnak, hogy
+        felismerhessen értelmetlen vagy feltehetőleg érvénytelen kifejezéseket.
+        Például, a "Hello, World" / 3 kifejezést érvénytelennek kell tekinteni,
+        mivel az osztás művelete (általánosan elfogadottan) nem értelmezhető egy
+        string és egy egész között.
+      </li>
+
+      <li>
+        Optimalizálás – A statikus típusellenőrzés a fordítóprogram számára
+        hasznos információkat biztosít arra vonatkozóan, hogy milyen utasításkód
+        alkalmazásával lehet hatékony programot előállítani.
+      </li>
+
+      <li>
+        Dokumentálás – A típusok használatával a program dokumentációja
+        egyértelműbbé és érthetőbbé válik.
+      </li>
+
+      <li>
+        Absztrakció (vagy modularitás) – A típusok használatával a programozó
+        lehetőséget kap arra, hogy magasabb szinten gondolkodjon a programról,
+        ne az alacsony szintű megvalósítási kérdések legyenek a meghatározók.
+      </li>
+    </header>
+  </body>
+</html>

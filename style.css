@@ -1,3 +1,27 @@
-a{
-    color: rgb(18, 92, 114);
+body {
+  background-color: rgb(134, 219, 155);
+}
+
+nav {
+  color: rgb(114, 15, 128);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 30px;
+  height: 50px;
+}
+
+nav a {
+  font-size: 20px;
+  color: rgb(153, 14, 153);
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    background-color: red;
+  }
 }
