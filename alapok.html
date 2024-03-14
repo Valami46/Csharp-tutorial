@@ -6,5 +6,34 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Feltételes utasítások</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Feltételes utasítások</h1>
+    <p>
+      A programok akkor válnak igazán érdekessé, ha feltételeket tesztelhetünk
+      és megváltoztathatjuk a program viselkedését a teszt kimenetelétől
+      függően. Erről szól ez a fejezet.
+    </p>
+    <h1>5.1. Boolean értékek és kifejezések</h1>
+    <p>
+      Egy Boolean (azaz logikai) érték vagy igaz, vagy hamis. A nevét a brit
+      matematikusról, George Boole-ról kapta, aki először írta le a
+      Boole-algebrát – néhány szabályt az érveléshez és ezeknek az értékeknek a
+      kombinálásához. Ez az alapja minden modern számítógép logikájának.
+    </p>
+    <code
+      >&gt;&gt;&gt; type(True) &lt;class 'bool'&gt; &gt;&gt;&gt; type(true)
+      Traceback (most recent call last): File "&lt;input&gt;", line 1, in
+      &lt;module&gt; NameError: name 'true' is not defined</code
+    >
+
+    Egy Boolean kifejezés egy olyan kifejezés, amelynek kiértékelése során
+    Boolean értéket kapunk. Például az == operátor azt vizsgálja, hogy két érték
+    egyenlő-e. Ez Boolean értéket eredményez:
+
+    <code
+      >&gt;&gt;&gt; 5 == (3 + 2) # Egyenlő-e vajon az 5 a 3+2 eredményével? True
+      &gt;&gt;&gt; 5 == 6 False &gt;&gt;&gt; j = "hel" &gt;&gt;&gt; j + "ló" ==
+      "helló" True</code
+    >
+  </body>
 </html>

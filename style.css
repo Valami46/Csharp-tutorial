@@ -3,13 +3,12 @@ body {
 }
 
 nav {
-  color: rgb(114, 15, 128);
+  background-color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  font-size: 30px;
   height: 50px;
 }
 
@@ -24,4 +23,8 @@ nav a {
     height: auto;
     background-color: red;
   }
+}
+code {
+  white-space: pre;
+  display: block;
 }
