@@ -14,26 +14,77 @@
       függően. Erről szól ez a fejezet.
     </p>
     <h1>5.1. Boolean értékek és kifejezések</h1>
-    <p>
+    <li>
       Egy Boolean (azaz logikai) érték vagy igaz, vagy hamis. A nevét a brit
       matematikusról, George Boole-ról kapta, aki először írta le a
       Boole-algebrát – néhány szabályt az érveléshez és ezeknek az értékeknek a
       kombinálásához. Ez az alapja minden modern számítógép logikájának.
-    </p>
+    </li>
     <code
       >&gt;&gt;&gt; type(True) &lt;class 'bool'&gt; &gt;&gt;&gt; type(true)
       Traceback (most recent call last): File "&lt;input&gt;", line 1, in
       &lt;module&gt; NameError: name 'true' is not defined</code
     >
 
-    Egy Boolean kifejezés egy olyan kifejezés, amelynek kiértékelése során
-    Boolean értéket kapunk. Például az == operátor azt vizsgálja, hogy két érték
-    egyenlő-e. Ez Boolean értéket eredményez:
+    <li>
+      Egy Boolean kifejezés egy olyan kifejezés, amelynek kiértékelése során
+      Boolean értéket kapunk. Például az == operátor azt vizsgálja, hogy két
+      érték egyenlő-e. Ez Boolean értéket eredményez:
+    </li>
 
     <code
       >&gt;&gt;&gt; 5 == (3 + 2) # Egyenlő-e vajon az 5 a 3+2 eredményével? True
       &gt;&gt;&gt; 5 == 6 False &gt;&gt;&gt; j = "hel" &gt;&gt;&gt; j + "ló" ==
       "helló" True</code
     >
+
+    <li>
+      Az első állításban a két operandus kiértékelés során egyenlőnek bizonyul,
+      így a kifejezés értéke True lesz. A második állításban mivel az 5 nem
+      egyenlő a 6-tal így False értéket kapunk.
+    </li>
+    <p>
+      Az == operátor az egyike annak a hat közönséges összehasonlító
+      operátornak, amelyek bool értéket eredményeznek. Itt van mind a hat:
+    </p>
+    <code>
+      == y # True (igaz) értéket ad ha ... x egyenlő y-nal x != y # ... x nem
+      egyenlő y-nal x &gt; y # ... x nagyobb, mint y x &lt; y # ... x kisebb,
+      mint y x &gt;= y # ... x nagyobb vagy egyenlő, mint y x &lt;= y # ... x
+      kisebb vagy egyenlő, mint y</code
+    >
+
+    <h1>
+      Feltételes utasítás: if, if else, if then, if then else, if then end if,
+      if then else end if
+    </h1>
+    <li>
+      Programunk futtatását feltételekhez köthetjük. A feltételes utasítás
+      segítségével két irányba terelhetjük a folyamatot. Ha teljesül a feltétel
+      akkor az első irányba folytatódik a program futása ha nem akkor a második
+      irányba. Az irányok alatt egy utasítás vagypedig egy blokk végrehajtását
+      értem.
+    </li>
+
+    <table style="background-color: yellow">
+      <tr>
+        <th>Feltételes végrehajtás</th>
+      </tr>
+
+      <tr>
+        <td>if x % 2 == 0:</td>
+         <td> print(x, " páros szám.")</td>
+             <td>print("Tudtad, hogy a 2 az
+          egyetlen páros prímszám?")</td>                         
+          
+          <td>else: print(x, " páratlan szám.")</td>
+          <td>print("Tudtad, hogy két páratlan számot összeszorozva " + "az eredmény
+          mindig páratlan?")</td>
+        </td>
+      </tr>
+    </table>
+
+    <h1>Folyamatábra egy olyan if utasításról, amelynek else ága is van:</h1>
+    <img src="src.png" alt="xxx">
   </body>
-</html>
+</html>                               

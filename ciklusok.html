@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Ciklusok</title>
+    <h1>Ciklusok</h1>
+
+    <h2>Ciklus (programozás)</h2>
+    <li>
+      A ciklus, vagy iteráció a számítógép-programozás és az algoritmusok egyik
+      alapvető eszköze, amely az ismétlődő (azonos vagy hasonló) tevékenységek
+      megvalósítására szolgál. A ciklus beépítését a programba
+      ciklusszervezésnek is nevezik. A ciklust az egyes programozási nyelvek
+      különböző kulcsszavakkal valósítják meg.
+    </li>
+
+    <h1>A ciklus részei:</h1>
+
+    <p>
+      Alább egy egyszerű BASIC nyelvű ciklust láthatunk, amelyik 2-től 5-ig
+      egyesével haladva kiírja a számokat és a négyzetüket:
+    </p>
+    <li>FOR i=2 TO 5 STEP 1 PRINT i, " négyzete: ", i*i NEXT i</li>
+
+    <li>
+      Ebben a ciklusban az i a ciklusváltozó, amely a ciklus kezdetén értéket
+      kap. A szerepe kettős: egyrészt vezérli a ciklust, mivel a ciklusváltozó
+      értékétől függ, hogy folytatódik-e a futás, másrészt a pillanatnyi értéket
+      a program felhasználja. A ciklus futásának kezdetén tehát az i értéke 2
+      lesz; mivel ez kisebb, mint 5, ezért a ciklusmag lefut, vagyis a program
+      kiírja a képernyőre a
+    </li>
+
+    <h1>Típusai</h1>
+    <h2>Feltételes ciklus (while)</h2>
+    <li>
+      A feltételes ciklus olyankor használatos, amikor nem feltétlenül ismert
+      előre, hogy futásidőben hányszor kell a ciklusnak lefutnia (például egy
+      számítógép lemezkatalógusában lévő fájlok listázása). Az viszont ismert,
+      hogy milyen feltétel teljesülése esetén kell a programnak tovább futnia
+      vagy leállnia. (Ez a kettő egymással ekvivalens, hiszen a további futás,
+      illetve a leállás feltétele egymás tagadása.) A feltétel teljesülését
+      vizsgálhatjuk a ciklusfejben vagy a ciklusvégben is; a különbség abban fog
+      állni, hogy legalább egyszer lefut-e a ciklus.
+    </li>
+
+    <h2>Elöltesztelő ciklus</h2>
+    <li>Az elöltesztelő ciklus sémája:</li>
+    <li>Ismételd, amíg a feltétel igaz utasítások ciklus vége</li>
+    <img src="kuki.png" alt="igeeeen" />
+
+    <h2>Hátultesztelő ciklus</h2>
+    <li>A hátultesztelő ciklus sémája:</li>
+    <li>Ismételd utasítások amíg a feltétel igaz</li>
+    <li>
+      Mivel a feltételvizsgálat a ciklusmag után áll, ezért a hátultesztelő
+      ciklus legalább egyszer mindenképpen lefut. A konkrét programnyelvi
+      megvalósítástól függ, hogy a hátultesztelő ciklusban a folytatás vagy a
+      kilépés feltételét kell-e megadni. A ciklus az első esetben addig fut,
+      amíg a ciklusvégben megadott feltétel igaz (ennek tipikus kulcsszava a
+      while), a másik esetben pedig addig, amíg igazzá nem válik (tipikus
+      kulcsszava az until).
+    </li>
+    <img src="valami.png" alt="hmm" />
+    <h2>Általános alakja a következő:</h2>
+    <li>do { utasítás(ok); } while (feltétel);</li>
+  </head>
+
+  <body></body>
+</html>

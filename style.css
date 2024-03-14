@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(134, 219, 155);
+  background-color: rgb(190, 122, 170);
 }
 
 nav {
@@ -27,4 +27,10 @@ nav a {
 code {
   white-space: pre;
   display: block;
+}
+
+table,
+td,
+tr {
+  border: 1px solid black;
 }
